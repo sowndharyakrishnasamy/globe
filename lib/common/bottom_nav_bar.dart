@@ -1,7 +1,9 @@
 import 'package:flutter/material.dart';
+
 import 'package:globe/resources/images.dart';
 import 'package:globe/resources/strings.dart';
 import 'package:globe/themes/colors.dart';
+
 class BottomNavBar extends StatefulWidget {
   @override
   _BottomNavBarState createState() => _BottomNavBarState();

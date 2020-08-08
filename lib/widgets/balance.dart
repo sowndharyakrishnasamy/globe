@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+
 import 'package:globe/themes/colors.dart';
 import 'package:globe/resources/images.dart';
 import 'package:globe/resources/strings.dart';
@@ -53,7 +54,6 @@ class _BalanceState extends State<Balance> {
   Widget build(BuildContext context) {
     return Container(
       padding: const EdgeInsets.fromLTRB(20, 30, 0, 30),
-      margin: const EdgeInsets.fromLTRB(0, 0, 0, 30),
       color: AppColors.COLOR_LIGHT_BLUE,
       child: Column(
         mainAxisAlignment: MainAxisAlignment.start,

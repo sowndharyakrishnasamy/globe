@@ -1,8 +1,10 @@
 
 class Images{
+  Images._();
   static const MENU = 'assets/images/menu-icon.png';
   static const BELL = 'assets/images/bell.png';
   static const PROFILE = 'assets/images/oval.png';
+  static const PROFILE_BIG = 'assets/images/profile.png';
   static const PLUS = 'assets/images/plus.png';
   static const MOBILE = 'assets/images/mobile.png';
   static const SPECIAL_PROMOS_BG = 'assets/images/specialpromo.png';

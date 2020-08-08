@@ -2,7 +2,7 @@
 import 'package:globe/themes/colors.dart';
 import 'package:globe/resources/strings.dart';
 import 'package:globe/resources/images.dart';
-import 'package:globe/common/promos.dart';
+import 'package:globe/modules/promos.dart';
 
 final specialpromodata = Data(
       title: Strings.SPECIAL_PROMOS,

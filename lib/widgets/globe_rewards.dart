@@ -1,26 +1,26 @@
 import 'package:flutter/material.dart';
+
 import 'package:globe/common/gradient_heading.dart';
+import 'package:globe/common/title_and_view_all.dart';
 import 'package:globe/themes/colors.dart';
 import 'package:globe/resources/strings.dart';
 import 'package:globe/resources/images.dart';
+
 class GlobeRewards extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Container(
-      padding: const EdgeInsets.fromLTRB(24, 30, 0, 20),
       color: AppColors.COLOR_WHITE,
       child: Column(
         mainAxisAlignment: MainAxisAlignment.start,
         crossAxisAlignment: CrossAxisAlignment.start,
         children: <Widget>[
-          GradientHeading(
-            text: Strings.GLOBE_REWARDS,
-            color: [
+          TitleViewAll(title: Strings.GLOBE_REWARDS, titlecolor: [
               AppColors.COLOR_SAPPHIRE,
               AppColors.COLOR_LAVENDER_PINK,
-            ]),
+            ],),
           Container(
-            margin: const EdgeInsets.fromLTRB(0, 10, 20, 0),
+            margin: const EdgeInsets.fromLTRB(24, 10, 20, 20),
             width:double.infinity,
             height:90,
             decoration: BoxDecoration(

@@ -1,7 +1,9 @@
 import 'package:flutter/material.dart';
-import 'package:globe/themes/colors.dart';
-class Themes{
 
+import 'package:globe/themes/colors.dart';
+
+class Themes{
+  Themes._();
   static final ThemeData lightTheme = _lightTheme();
   static ThemeData _lightTheme(){
     return ThemeData(

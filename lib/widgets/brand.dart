@@ -1,7 +1,9 @@
 import 'package:flutter/material.dart';
+
 import 'package:globe/themes/colors.dart';
 import 'package:globe/resources/strings.dart';
 import 'package:globe/resources/images.dart';
+import 'package:globe/common/brand_card.dart';
 
 class Brand extends StatelessWidget {
   final List<Map<String, dynamic>> brand = [
@@ -48,66 +50,11 @@ class Brand extends StatelessWidget {
                 scrollDirection: Axis.horizontal,
                 itemCount: brand.length,
                 itemBuilder: (BuildContext context, int index) {
-                  return Card(
-                      shape: RoundedRectangleBorder(
-                        borderRadius: BorderRadius.circular(12),
-                      ),
-                      child: Container(
-                        height: 180,
-                        width: 140,
-                        padding: const EdgeInsets.fromLTRB(16, 20, 0, 10),
-                        decoration: BoxDecoration(
-                          image: DecorationImage(
-                            image: AssetImage(brand[index]['bgimage']),
-                            fit: BoxFit.cover,
-                          ),
-                          borderRadius: BorderRadius.circular(12),
-                        ),
-                        child: Column(
-                          mainAxisAlignment: MainAxisAlignment.spaceBetween,
-                          crossAxisAlignment: CrossAxisAlignment.start,
-                          children: <Widget>[
-                            Image(
-                              image: AssetImage(brand[index]['brandimage']),
-                              fit: BoxFit.cover,
-                            ),
-                            RichText(
-                              text: TextSpan(children: [
-                                TextSpan(
-                                  text: '${brand[index]["points"] }',
-                                  style: Theme.of(context)
-                                      .textTheme
-                                      .headline3
-                                      .copyWith(color: AppColors.COLOR_WHITE),
-                                ),
-                                TextSpan(
-                                  text: 'Pts',
-                                  style: Theme.of(context)
-                                      .textTheme
-                                      .subtitle1
-                                      .copyWith(
-                                          color: AppColors.COLOR_WHITE,
-                                          fontSize: 14),
-                                )
-                              ]),
-                            ),
-                            Column(
-                              mainAxisAlignment: MainAxisAlignment.start,
-                              crossAxisAlignment: CrossAxisAlignment.start,
-                              children: <Widget>[
-                                Text(
-                                  brand[index]['text1'],
-                                  style: Theme.of(context).textTheme.headline4,
-                                ),
-                                Text(
-                                  brand[index]['text2'],
-                                  style: Theme.of(context).textTheme.headline4,
-                                ),
-                              ],
-                            )
-                          ],
-                        ),
-                      ));
+                  return BrandCard(bgimage: brand[index]['bgimage'],
+                                   brandimage: brand[index]['brandimage'],
+                                   points: brand[index]["points"],
+                                   text1: brand[index]["text1"],
+                                   text2: brand[index]["text2"]);
                 },
               ),
             ),

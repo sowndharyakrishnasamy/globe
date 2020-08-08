@@ -1,8 +1,10 @@
 import 'package:flutter/material.dart';
+
 import 'package:globe/common/promo_card.dart';
-import 'package:globe/common/gradient_heading.dart';
+import 'package:globe/common/title_and_view_all.dart';
 import 'package:globe/themes/colors.dart';
-import 'package:globe/common/promos.dart';
+import 'package:globe/modules/promos.dart';
+
 class SpecialPromos extends StatelessWidget {
   final Data data;
   const SpecialPromos({
@@ -16,13 +18,7 @@ class SpecialPromos extends StatelessWidget {
         mainAxisAlignment: MainAxisAlignment.start,
         crossAxisAlignment: CrossAxisAlignment.start,
         children: <Widget>[
-          Padding(
-            padding: const EdgeInsets.fromLTRB(24, 0, 0, 0),
-            child: GradientHeading(
-              text:data.title,
-              color:data.titlecolor
-              ),
-          ),
+          TitleViewAll(title: data.title, titlecolor: data.titlecolor),
           PromoCard(
             name: data.name,
             cardheading: data.cardheading,

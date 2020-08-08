@@ -1,11 +1,21 @@
 import 'package:flutter/material.dart';
-import 'package:globe/resources/strings.dart';
+
 import 'package:globe/themes/colors.dart';
 
-class Button extends StatelessWidget {
+class Button extends StatelessWidget {  
+  final String btntext;
+  final Color textcolor;
+  final double width;
+  Button({
+    @required this.btntext,
+    @required this.textcolor,
+    @required this.width
+    });
+  
   @override
   Widget build(BuildContext context) {
     return Container(
+      width:width,
       color: AppColors.COLOR_WHITE,
       padding: const EdgeInsets.fromLTRB(20, 20, 20, 40),
       child: RaisedButton(
@@ -16,11 +26,11 @@ class Button extends StatelessWidget {
         onPressed: () {},
         child: 
           Text(
-            Strings.FIND_OUT_MORE,
+            btntext,
             style: Theme.of(context).textTheme.subtitle2.copyWith(color:AppColors.COLOR_BLACK),
             ),
           color: AppColors.COLOR_WHITE,
-          textColor: AppColors.COLOR_BLACK,
+          textColor: textcolor,
           padding: const EdgeInsets.fromLTRB(0, 17, 0, 17),
         ),
     );

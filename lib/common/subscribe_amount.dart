@@ -1,5 +1,7 @@
 import 'package:flutter/material.dart';
+
 import 'package:globe/themes/colors.dart';
+
 class SubscribeAmount extends StatelessWidget {
   final String subscribe;
   final String amount;

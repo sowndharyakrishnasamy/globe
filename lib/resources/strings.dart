@@ -1,4 +1,5 @@
 class Strings{
+ Strings._();
  static const PREPAID = 'My Prepaid';
  static const NUMBER = '092787368820';
  static const BOTTOMNAV1 = 'Mobile';
@@ -52,4 +53,6 @@ class Strings{
  static const RECOMMEDNED_TITLE2 = 'GoUNLI180';
  static const RECOMMEDNED_DESC2 = '15 days UNLI to Globe';
  static const NEW = 'NEW';
+ static const ABOUT_GLOBE = 'About Globe';
+ static const PAYMENT = 'Payment';
 }

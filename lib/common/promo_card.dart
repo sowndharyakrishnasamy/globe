@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+
 import 'package:globe/common/gradient_heading.dart';
 import 'package:globe/themes/colors.dart';
 
@@ -20,7 +21,7 @@ class PromoCard extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Container(
-      margin: const EdgeInsets.fromLTRB(20, 12, 20, 10),
+      margin: const EdgeInsets.fromLTRB(20, 12, 20, 0),
       width: double.infinity,
       height: 160,
       child: Card(
@@ -46,7 +47,7 @@ class PromoCard extends StatelessWidget {
               Expanded(
                 flex:3,
                 child: Padding(
-                  padding: const EdgeInsets.fromLTRB(20, 10, 0, 10),
+                  padding: const EdgeInsets.fromLTRB(20, 10, 0, 0),
                   child: Column(
                     mainAxisAlignment: MainAxisAlignment.start,
                     crossAxisAlignment: CrossAxisAlignment.start,

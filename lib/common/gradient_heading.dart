@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+
 import 'package:globe/themes/colors.dart';
 
 class GradientHeading extends StatelessWidget {

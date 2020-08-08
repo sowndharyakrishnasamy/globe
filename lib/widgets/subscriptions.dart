@@ -1,10 +1,12 @@
 import 'package:flutter/material.dart';
+
 import 'package:globe/common/gradient_heading.dart';
 import 'package:globe/common/movie_suggestions.dart';
 import 'package:globe/common/movies_card.dart';
 import 'package:globe/themes/colors.dart';
 import 'package:globe/resources/strings.dart';
 import 'package:globe/resources/images.dart';
+
 class Subscriptions extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
