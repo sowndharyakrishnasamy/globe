@@ -23,8 +23,9 @@ class LatestPromosCard extends StatelessWidget {
           borderRadius: BorderRadius.circular(12),
         ),
         child: Container(
-          height: 170,
-          width: 140,
+          height: double.infinity,
+          width: MediaQuery.of(context).orientation == Orientation.landscape ? MediaQuery.of(context).size.width * 0.28 :
+          MediaQuery.of(context).size.width * 0.4,
           decoration: BoxDecoration(
             image: DecorationImage(
               image: AssetImage(bgimage),

@@ -36,6 +36,7 @@ class LatestPromos extends StatelessWidget {
   ];
   @override
   Widget build(BuildContext context) {
+    final isLandscape = MediaQuery.of(context).orientation == Orientation.landscape;
     return Container(
         color: AppColors.COLOR_WHITE,
         child: Column(
@@ -53,7 +54,8 @@ class LatestPromos extends StatelessWidget {
             SizedBox(height: 10),
             Container(
                 padding: const EdgeInsets.fromLTRB(20, 0, 0, 0),
-                height: 170,
+                height: isLandscape ? MediaQuery.of(context).size.height * 0.5: 
+                MediaQuery.of(context).size.height * 0.28,
                 child: ListView.builder(
                   scrollDirection: Axis.horizontal,
                   itemCount: latestpromos.length,

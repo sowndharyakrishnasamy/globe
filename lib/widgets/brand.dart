@@ -31,6 +31,7 @@ class Brand extends StatelessWidget {
   ];
   @override
   Widget build(BuildContext context) {
+    final _islandscape = MediaQuery.of(context).orientation == Orientation.landscape;
     return Container(
         padding: const EdgeInsets.fromLTRB(20, 0, 0, 0),
         color: AppColors.COLOR_WHITE,
@@ -45,7 +46,8 @@ class Brand extends StatelessWidget {
             ),
             Container(
               padding: const EdgeInsets.fromLTRB(0, 10, 0, 0),
-              height: 180,
+              height: _islandscape ? MediaQuery.of(context).size.height * 0.45 : 
+              MediaQuery.of(context).size.height * 0.3,
               child: ListView.builder(
                 scrollDirection: Axis.horizontal,
                 itemCount: brand.length,

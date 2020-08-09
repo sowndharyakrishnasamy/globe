@@ -23,8 +23,9 @@ class BrandCard extends StatelessWidget {
                         borderRadius: BorderRadius.circular(12),
                       ),
                       child: Container(
-                        height: 180,
-                        width: 140,
+                        height: double.infinity,
+                        width: MediaQuery.of(context).orientation == Orientation.landscape ? MediaQuery.of(context).size.width * 0.28 :
+          MediaQuery.of(context).size.width * 0.4,
                         padding: const EdgeInsets.fromLTRB(16, 20, 0, 10),
                         decoration: BoxDecoration(
                           image: DecorationImage(
